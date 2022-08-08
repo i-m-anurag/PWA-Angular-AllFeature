@@ -1,0 +1,22 @@
+<h1>
+    ANY POST DATA
+</h1>
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let data of Postdata">
+
+        <mat-card class="example-card">
+            <mat-card-title>{{data.id}}</mat-card-title>
+            <mat-card-subtitle>{{data.title}}</mat-card-subtitle>
+            <mat-card-content>
+             <p>{{data.body}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
